@@ -1,0 +1,1283 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;700&family=Koulen&display=swap");
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;700&family=Koulen&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Arial Regular";
+  src: local("Arial Regular"), url("../font/ArialMT.ttf");
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: local("Georgia"), url("../font/Georgia.ttf");
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+}
+
+.header-container .header-logo {
+  background-image: url("../img/Star-Wars-Logo-Transparent-Background.png");
+  width: 150px;
+  height: 50px;
+  background-size: 100% 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header-registration {
+  text-transform: uppercase;
+  color: #4c4c4c;
+}
+
+.header-registration span {
+  cursor: pointer;
+  color: #d3d3d3;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Koulen", cursive;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.header-registration span:hover {
+  color: white;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Georgia Regular";
+  color: #d3d3d3;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.settings .settings-sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.settings .settings-sort p {
+  color: #d3d3d3;
+}
+
+.settings .settings-sort span {
+  color: rgba(98, 96, 96, 0.8);
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.settings .settings-sort span:hover {
+  color: white;
+}
+
+.settings .settings-sort span.active {
+  color: white;
+}
+
+.settings .settings-sort .btn-favourite-basket {
+  font-size: 30px;
+}
+
+.settings .settings-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.settings .settings-view span {
+  color: rgba(98, 96, 96, 0.8);
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.settings .settings-view span:hover {
+  color: white;
+}
+
+.settings .settings-view span.active {
+  color: white;
+}
+
+.select {
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  font-family: "IBM Plex Sans Thai Looped";
+  font-weight: 500;
+  color: #d3d3d3;
+  line-height: 1.3;
+  padding: 5px;
+  border-radius: 0.5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.favourite {
+  position: relative;
+}
+
+.btn-favourite {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #d3d3d3;
+}
+
+.btn-favourite.active span {
+  color: #ffff00;
+}
+
+.count {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  border: 1px solid white;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+.wrapper-films.block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  -ms-grid-column: 40;
+  grid-column: 40px;
+  width: 100%;
+}
+
+.wrapper-films.block .film-poster {
+  height: 300px;
+  width: 150px;
+  background-size: 100% 100%;
+}
+
+.wrapper-films.block .film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper-films.block .film-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(98, 96, 96, 0.4);
+  width: 350px;
+  row-gap: 30px;
+  padding-bottom: 30px;
+}
+
+.wrapper-films.block .container-img {
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/loader.gif");
+  background-size: 100% 100%;
+}
+
+.wrapper-films.block .container-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wrapper-films.block .film-discription {
+  color: #d3d3d3;
+  width: 100%;
+  padding-left: 30px;
+  font-family: "IBM Plex Sans Thai Looped";
+}
+
+.wrapper-films.block .film-discription h6 {
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.wrapper-films.block .film-discription p {
+  font-size: 14px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.wrapper-films.table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  row-gap: 10px;
+}
+
+.wrapper-films.table .film-poster {
+  height: 300px;
+  width: 150px;
+  background-size: 100% 100%;
+}
+
+.wrapper-films.table .film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.wrapper-films.table .film-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(98, 96, 96, 0.6);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.wrapper-films.table .film-content .button-like {
+  position: absolute;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
+  top: 15px;
+  right: 15px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.wrapper-films.table .film-content .button-like:hover {
+  color: white;
+}
+
+.wrapper-films.table .film-content .button-like.active {
+  color: white;
+}
+
+.wrapper-films.table .container-img {
+  width: 220px;
+  height: 150px;
+  background-image: url("../img/loader.gif");
+  background-size: 100% 100%;
+}
+
+.wrapper-films.table .container-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper-films.table .film-discription {
+  color: #d3d3d3;
+  font-family: "IBM Plex Sans Thai Looped";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper-films.table .film-discription h6 {
+  font-family: "Koulen", cursive;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.wrapper-films.table .film-discription p {
+  font-size: 14px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.film-content {
+  position: relative;
+}
+
+.film-content .button-like {
+  position: absolute;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
+  bottom: 15px;
+  right: 15px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.film-content .button-like:hover {
+  color: white;
+}
+
+.film-content .button-like.active {
+  color: white;
+}
+
+.loader-div {
+  border-radius: 30px;
+  background-image: url("../img/preloader-cosmos.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px 200px;
+  width: 100%;
+  height: 530px;
+  opacity: 0.5;
+}
+
+.popup-pets {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.jpg");
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup-pets.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  width: 900px;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.popup-content-films {
+  height: 500px;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 10px;
+  width: 900px;
+  overflow-y: scroll;
+}
+
+.popup-close {
+  top: -36px;
+  right: -36px;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #4c4c4c;
+  background-image: url("../icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  background-color: white;
+}
+
+.popup-content img {
+  display: block;
+  width: 220px;
+  height: 150px;
+}
+
+.popup-content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: rgba(98, 96, 96, 0.8);
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  text-align: justify;
+  border-radius: 15px;
+}
+
+.popup-item-description {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.film-discription {
+  color: white;
+}
+
+.film-discription h6 {
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.film-discription p {
+  letter-spacing: 1px;
+  font-family: "IBM Plex Sans Thai Looped";
+}
+
+h2 {
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.film-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.film-main .left {
+  width: 25%;
+}
+
+.film-main .centre {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.film-main .right {
+  width: 15%;
+}
+
+h1 {
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.centre-film-description {
+  color: white;
+  text-align: justify;
+  font-family: "IBM Plex Sans Thai Looped";
+  margin-top: 15px;
+}
+
+.link-on-film {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: orange;
+  padding: 5px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  color: white;
+  border-radius: 15px;
+  font-family: "Koulen", cursive;
+}
+
+.btn-control {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-like {
+  border: none;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.btn-like:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-like span {
+  font-size: 20px;
+}
+
+.btn-like.active {
+  background-color: white;
+  color: black;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.wrapper-actors {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper-actors .actor-item {
+  width: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(98, 96, 96, 0.5);
+  row-gap: 5px;
+  padding: 10px 5px;
+  height: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper-actors .actor-item h6 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped";
+}
+
+.wrapper-actors .actor-item .wrapper-img {
+  width: 80%;
+  background-size: 30% 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper-actors .actor-item .wrapper-img .actor-item-img {
+  width: 100%;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wrapper-actors .actor-item .link-actor {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: orange;
+  padding: 5px 25px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.load-actors {
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 20px;
+  color: white;
+  background-color: orange;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.load-actors img {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.load-actors img.visible {
+  display: block;
+}
+
+.left-img {
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.left-img-poster {
+  position: relative;
+  margin-top: 30px;
+  height: 200px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.trailer {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  color: white;
+  border-radius: 15px;
+  font-family: "Koulen", cursive;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.popup-video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(98, 96, 96, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.popup-video.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right h3 {
+  color: white;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.disppear {
+  -webkit-animation: vanish 1s forwards;
+          animation: vanish 1s forwards;
+}
+
+@-webkit-keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+body {
+  background-image: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 15px 30px;
+}
+
+h1 {
+  color: white;
+}

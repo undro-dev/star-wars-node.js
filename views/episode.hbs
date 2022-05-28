@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{episode.title}}</title>
+    <link rel="icon" href="../../assets/icons/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="film-header"></header>
+      <main class="film-main">
+        <div class="left">
+          <div class="left-img" style="background-image: url(../../assets/img/{{episode.episode_id}}.png)"></div>
+          <div class="left-img-poster" style="background-image: url(../../assets/img/posters/{{episode.episode_id}}.png)">
+            <div class="trailer"><span class="material-icons">play_circle</span>trailer</div>
+          </div>
+        </div>
+        <div class="centre">
+          <h1>star wars: episode {{episode.episode_id}} - {{episode.title}} <br> ({{episode.release_date}})</h1>
+          <p class="centre-film-description">{{episode.opening_crawl}}</p>
+          <div class="btn-control">
+            <a href={{episode.film-online}} id="link-on-film" target="_blank"
+              ><div class="link-on-film"><span class="material-icons">play_circle</span>Watch movie</div></a
+            >
+            <button class="{{getActiveClass episode.episode_id}}" id="{{episode.episode_id}}" title="add to favorites"><span class="material-icons">bookmark</span></button>
+          </div>
+          <h3>Actors</h3>
+          <div class="wrapper-actors">
+            			{{#each allActors}}
+                  <div class="actor-item">
+                    <h6>{{this.name}}</h6>
+                    <div class="wrapper-img">
+                      <img class="actor-item-img" src="{{this.image}}" alt="{{this.name}}">
+                    </div>
+                    <a class="link-actor" href="{{this.wiki}}" target="_blank">About</a>
+                  </div>
+
+    			{{/each}}
+          </div>
+          <button class="load-actors"><img src="../../assets/img/preloaders/loader.gif" alt=""> Load more</button>
+        </div>
+        <div class="right"></div>
+      </main>
+    </div>
+    <div class="popup-video animate__animated">
+      <div class="video-wrapper">
+        <video width="400" height="240" controls src="../../assets/videos/trailers/{{episode.episode_id}}.mp4">
+          <source type="video/mp4" />
+        </video>
+        <div class="popup-close video-close"></div>
+      </div>
+    </div>
+    <div class="loader">
+      <img src="../../assets/img/preloaders/loader.gif" alt="loader" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../../assets/js/episode.js"></script>
+  </body>
+</html>

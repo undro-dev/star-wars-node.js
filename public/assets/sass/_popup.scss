@@ -1,0 +1,92 @@
+.popup-pets {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.jpg");
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.popup-pets.visible {
+  display: flex;
+}
+.popup__body {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 900px;
+}
+.popup-content {
+  position: relative;
+}
+.popup-content-films {
+  height: 500px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+  width: 900px;
+  overflow-y: scroll;
+}
+
+.popup-close {
+  top: -36px;
+  right: -36px;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: $dark-grey;
+  background-image: url("../icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  z-index: 3;
+  cursor: pointer;
+  &:hover {
+    background-color: white;
+  }
+}
+
+.popup-content img {
+  display: block;
+  width: 220px;
+  height: 150px;
+}
+.popup-content-item {
+  display: flex;
+  width: 100%;
+  background-color: rgba(98, 96, 96, 0.8);
+  padding: 10px;
+  align-items: center;
+  column-gap: 10px;
+  text-align: justify;
+  border-radius: 15px;
+}
+.popup-item-description {
+  flex-grow: 1;
+}
+.film-discription {
+  color: white;
+  h6 {
+    font-family: "Koulen", cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  p {
+    letter-spacing: 1px;
+    font-family: "IBM Plex Sans Thai Looped";
+  }
+}
+h2 {
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+}

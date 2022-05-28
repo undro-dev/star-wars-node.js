@@ -1,0 +1,150 @@
+.film-main {
+  display: flex;
+  column-gap: 15px;
+}
+.film-main .left {
+  width: 25%;
+}
+.film-main .centre {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.film-main .right {
+  width: 15%;
+}
+
+h1 {
+  font-family: "Koulen", cursive;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.centre-film-description {
+  color: white;
+  text-align: justify;
+  font-family: "IBM Plex Sans Thai Looped";
+  margin-top: 15px;
+}
+
+.link-on-film {
+  width: max-content;
+  height: max-content;
+  background-color: orange;
+  padding: 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  color: white;
+  border-radius: 15px;
+  font-family: "Koulen", cursive;
+}
+
+.btn-control {
+  margin-top: 15px;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.btn-like {
+  border: none;
+  height: max-content;
+  color: white;
+  height: 38px;
+  width: 38px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btn-like:hover {
+  background-color: white;
+  color: black;
+}
+.btn-like span {
+  font-size: 20px;
+}
+
+.btn-like.active {
+  background-color: white;
+  color: black;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+.wrapper-actors {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-content: space-between;
+}
+.wrapper-actors .actor-item {
+  width: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(98, 96, 96, 0.5);
+  row-gap: 5px;
+  padding: 10px 5px;
+  height: 200px;
+  justify-content: space-between;
+}
+.wrapper-actors .actor-item h6 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-family: "IBM Plex Sans Thai Looped";
+}
+.wrapper-actors .actor-item .wrapper-img {
+  width: 80%;
+  background-image: url("../img/preloaders/loader.gif");
+  background-size: 30% 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper-actors .actor-item .wrapper-img .actor-item-img {
+  width: 100px;
+  height: 100px;
+}
+.wrapper-actors .actor-item .link-actor {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: orange;
+  padding: 5px 25px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.load-actors {
+  width: max-content;
+  padding: 5px 20px;
+  color: white;
+  background-color: orange;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center;
+}

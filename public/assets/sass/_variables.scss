@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Arial Regular";
+  src: local("Arial Regular"), url("../font/ArialMT.ttf");
+}
+@font-face {
+  font-family: "Georgia";
+  src: local("Georgia"), url("../font/Georgia.ttf");
+}
+$arial: "Arial Regular";
+$georgia: "Georgia Regular";
+$light-grey: #d3d3d3;
+$dark-grey: #4c4c4c;
+$bg-black: rgba(0, 0, 0, 0.7);
+$yellow-active: #ffff00;

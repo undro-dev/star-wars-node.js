@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;700&family=Koulen&display=swap");
+.wrapper-films.block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  grid-column: 40px;
+  width: 100%;
+  .film-poster {
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+  }
+  .film {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .film-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(98, 96, 96, 0.4);
+    width: 350px;
+    row-gap: 30px;
+    padding-bottom: 30px;
+  }
+  .container-img {
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/loader.gif");
+    background-size: 100% 100%;
+  }
+  .container-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .film-discription {
+    color: $light-grey;
+    width: 100%;
+    padding-left: 30px;
+    font-family: "IBM Plex Sans Thai Looped";
+    h6 {
+      font-family: "Koulen", cursive;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: normal;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.wrapper-films.table {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  row-gap: 10px;
+  .film-poster {
+    height: 300px;
+    width: 150px;
+    background-size: 100% 100%;
+  }
+  .film {
+    display: flex;
+    width: 100%;
+  }
+  .film-content {
+    width: 100%;
+    display: flex;
+    background-color: rgba(98, 96, 96, 0.6);
+    column-gap: 30px;
+    .button-like {
+      position: absolute;
+      outline: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: black;
+      top: 15px;
+      right: 15px;
+      transition: color 0.2s;
+    }
+    .button-like:hover {
+      color: white;
+    }
+    .button-like.active {
+      color: white;
+    }
+  }
+  .container-img {
+    width: 220px;
+    height: 150px;
+    background-image: url("../img/loader.gif");
+    background-size: 100% 100%;
+  }
+
+  .container-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .film-discription {
+    color: $light-grey;
+    font-family: "IBM Plex Sans Thai Looped";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h6 {
+      font-family: "Koulen", cursive;
+      font-size: 20px;
+      font-weight: normal;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+  }
+}
+.film-content {
+  position: relative;
+  .button-like {
+    position: absolute;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: black;
+    bottom: 15px;
+    right: 15px;
+    transition: color 0.2s;
+  }
+  .button-like:hover {
+    color: white;
+  }
+  .button-like.active {
+    color: white;
+  }
+}
+
+.loader-div {
+  border-radius: 30px;
+  background-image: url("../img/preloader-cosmos.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px 200px;
+  width: 100%;
+  height: 530px;
+  opacity: 0.5;
+}

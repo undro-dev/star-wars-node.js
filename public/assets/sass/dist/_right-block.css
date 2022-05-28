@@ -1,0 +1,10 @@
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right h3 {
+  color: white;
+  font-family: "Koulen", cursive;
+  font-weight: normal;
+}

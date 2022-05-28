@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+    <link rel="icon" href="../assets/icons/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div></div>
+        <div class="header-logo"></div>
+        <div class="header-registration"><span>Log in</span> // <span>sign up</span></div>
+      </div>
+    </header>
+    <main>
+      <div class="container main-container">
+        <div class="settings">
+          <div class="settings-sort">
+            <p>Sort by</p>
+            <select class="select">
+              <option>Episode number top</option>
+              <option>Episode number bottom</option>
+              <option>Release date top</option>
+              <option>Release date bottom</option>
+            </select>
+            <div class="favourite"><button class="btn-favourite"><span class="material-icons btn-favourite-basket">star</span></button></div>
+          </div>
+          <div class="settings-view">
+            <span class="material-icons btn-view-page block">grid_view</span>
+            <span class="material-icons btn-view-page table">list</span>
+          </div>
+        </div>
+        <div class="wrapper-films {{display}}">
+					{{#each allFilms}}
+					<a href="http://localhost:3001/star-wars/episode/{{this.episode_id}}" class="film">
+						<div class="film-content">
+							<div class="container-img">
+								<img src="../assets/img/{{this.episode_id}}.png" alt="{{this.title}}">
+							</div>
+							<div class="film-discription">
+								<h6>{{this.title}}</h6>
+								<p class="episode">Episode number: {{this.episode_id}}</p>
+								<p class="release">Release date: {{this.release_date}}</p>
+							</div>
+              <button id="{{this.episode_id}}" class="{{getTime this.episode_id}}" >
+                <span class="material-icons">star</span>
+              </button>
+						</div>
+					</a>
+    			{{/each}}
+				</div>
+        </div>
+        </div>
+      </div>
+    </main>
+    <div class="popup-pets animate__animated" id="popup-pets">
+      <div class="popup__body">
+        <div class="popup-content">
+          <h2>favorite films</h2>
+          <div class="popup-content-films"></div>
+          <div class="popup-close"></div>
+        </div>
+      </div>
+    </div>
+    {{!-- <div class="loader">
+      <img src="./assets/img/preloaders/loader.gif" alt="loader" />
+    </div> --}}
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="../assets/js/script.js"></script>
+  </body>
+</html>
